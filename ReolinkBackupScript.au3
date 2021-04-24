@@ -69,7 +69,7 @@ If $Exit_Code = false Then
    sleep(1000);
    ControlClick("Auto Stop", "",2129,"",1,35,14)
 
-   ;Giving another 5 minutes and then close Reolink client (total client runtime 15minutes)
+   ;Giving another 5 minutes and then close Reolink Client (total client runtime 15minutes)
    sleep(900000)
 
    ; Close the Reolink Client process using the PID returned by Run.
