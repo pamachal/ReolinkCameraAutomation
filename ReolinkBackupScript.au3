@@ -11,21 +11,22 @@ Func Example()
 
     Dim $Exit_Code =  false ;
 
-    ; Run Reolink Client with the window maximized.
+    ;Run Reolink Client with the window maximized.
     Local $iPID = Run("C:\Program Files (x86)\Reolink Client\Reolink Client.exe", "", @SW_SHOWMAXIMIZED)
 
-	;Wait 1 seconds for the Reolink window to appear.
+    ;Wait 1 seconds for the Reolink window to appear.
     WinWait("[CLASS:Reolink Client]", "", 1)
 
-    ; Click Login
-	MouseClick($MOUSE_CLICK_LEFT, 1141, 179, 1)
+    ;Click Login
+    MouseClick($MOUSE_CLICK_LEFT, 1141, 179, 1)
     Sleep(1000)
 
 If $Exit_Code = false Then
 
    Do
-		;Check if login succesfull otherwise attempt re-login
-		;NOTE!!! Pixel position must match login indication icon in Reolink Client. Use AutoIt Windows Info tool to locate coordinates.
+	;Check if login succesfull otherwise attempt re-login
+        ;NOTE!!! Pixel position must match login indication icon in Reolink Client. Use AutoIt Windows Info tool to locate coordinates.
+	
         If PixelGetColor (1068, 136) = 12698049 Then
 
            MouseClick($MOUSE_CLICK_LEFT, 1141, 179, 1)
