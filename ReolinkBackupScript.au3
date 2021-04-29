@@ -4,6 +4,7 @@
 
 ;Author: Pavel Machala pavel.machala.ap@seznam.cz
 ;IMPORTANT Script works only on Windows 10 and screen resolution 1280x960
+;You can donate this project via PayPal if you like
 
 Example()
 
