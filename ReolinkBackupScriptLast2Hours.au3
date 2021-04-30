@@ -60,7 +60,7 @@ If $Exit_Code = false Then
 			   $ItemDateTransformed = _DateTimeFormatEx( $ItemDate , "yyyy/MM/dd H:mm:ss")
 			   $diff=_dateDiff("s",$ItemDateTransformed,$CurrentDate)
 
-			   if $diff >7200 then ;Select here limit how old files should be downloaded in seconds)
+			   if $diff >7200 then ;Select here limit how old files should be downloaded in seconds
 				  ;Skip selection
 			   Else
 				  ;Select file
@@ -85,11 +85,11 @@ If $Exit_Code = false Then
    ControlClick("Auto Stop", "",2129,"",1,35,14)
    sleep(5000);
 
-   ;Giving another 5 minutes and then close Reolink client (total client runtime 25minutes)
+   ;Giving another 5 minutes and then close Reolink client (total client runtime 15minutes)
    sleep(300000)
 
    ;Close the Reolink Client process using the PID returned by Run.
-    ProcessClose($iPID)
+   ProcessClose($iPID)
 
 
  EndFunc
