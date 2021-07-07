@@ -11,6 +11,7 @@
 
 ;Author: Pavel Machala pavel.machala.ap@seznam.cz
 ;IMPORTANT Script works only on Windows 10 and screen resolution 1280x960
+:Dont forget to change path where your clients saves the video files on row #90
 
 Example()
 
